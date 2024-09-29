@@ -11,7 +11,7 @@
 }
 
 /* General Styles*/
-.nav, .nav-left, .nav-right, .logo-menu, .search-area form, .icons, .apps-profile {
+.nav, .nav-left, .nav-right, .logo-menu, .search-area form, .icons, .apps-profile, .google-profile {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -78,17 +78,66 @@
     border: none;
     height: 46px;
     padding: 11px 0;
+    font-size: 16px;
+    width: 615px;
 }
 
 .search-area form button{
     border: none;
-    margin: 0 4px;
+    margin: 4px;
+    padding: 0 5px;
     border-radius: 50px;
 }
 .search-area form span{
     border-radius: 50px;
 }
 .search-icon{
+    border-radius: 50px;
+    padding: 8px;
+    color: #5f6367;
+}
+
+.search-icon:hover{
+    background-color: #dedede;
+    cursor:pointer;
+}
+
+.apps-profile{
+    padding: 0 0 0 30px;
+}
+
+.google-profile{
+    margin: 0 4px 0 10px;
+    border: 1px solid #dedede;
     border-radius: 8px;
-  
+}
+
+.google-logo{
+    width: 85px;
+    height: 40px;
+    padding: 0 0 0 8px;
+}
+
+/*Sidebar styling */
+.sidebar{
+    padding: 8px 0 0 0; 
+
+}
+
+.sidebar-item{
+    display: flex;
+    align-items:center;
+    height: 48px;
+    width: 280px;
+    padding: 0 0 0 12px;
+}
+
+.sidebar-text{
+    margin: 0 0 0 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.sidebar-icon{
+    padding: 0 12px;
 }
