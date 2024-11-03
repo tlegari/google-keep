@@ -15,7 +15,7 @@ class App{
         this.$activeForm = document.querySelector(".active-form");
         this.$inactiveForm = document.querySelector(".inactive-form");
         this.$noteTitle = document.querySelector(".note-title");
-        this.$notText = document.querySelector(".note-text");
+        this.$noteText = document.querySelector(".ote-text");
         this.$notes = document.querySelector(".note");
         this.$form = document.querySelector("#modal-form");
         this.$modal = document.querySelector(".modal");
@@ -125,7 +125,8 @@ class App{
 
             </div>
        
-        `).join("");// display each note detail
+        `
+    ).join("");// display each note detail
 
     }
 }

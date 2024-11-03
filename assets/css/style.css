@@ -163,7 +163,7 @@
 
 .main-content{
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 65px);
 }
 
 /*Inactive form styles*/
@@ -173,7 +173,7 @@
     justify-content: center;
     height: 46px;
     margin: 30px 0 0 0;
-    visibility: hidden;
+    visibility: visible;
    
 }
 .inactive-form-container .inactive-form{
@@ -184,8 +184,8 @@
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
-
-.inactive-form input, .active-form input{
+/*added modal form input*/
+.inactive-form input, .active-form input, .modal form input{
   border: none;
   height: 44px;
   width:100%;
@@ -196,6 +196,7 @@
   border-bottom-left-radius: 10px;
 
 }
+
 
 .inactive-form input:focus, .active-form input:focus, .modal form input:focus{
     outline: none;
@@ -208,7 +209,7 @@
     margin: 0 10px 0 0;
 }
 
-/*Active form styles*/
+
 .active-form-container{
     display: flex;
     justify-content: center;
@@ -219,6 +220,7 @@
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.5);
     min-width: 598px;
+    display: none;
 }
 
 .note-title{
@@ -326,7 +328,7 @@ width: 100%;
 height: 100%;
 border: none;
 transition: opacity 0.5s ease, visibility 0s 0.5s;
-visibility: visible;
+visibility: hidden;
 
 }
 
@@ -352,7 +354,7 @@ visibility: visible;
 }
 
 .open-modal{
-    visibility: hidden;
+    visibility: visible;
     opacity: 1;
     transition: 0.5 ease ;
 }
