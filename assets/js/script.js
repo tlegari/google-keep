@@ -5,7 +5,7 @@ class Note {
       this.text = text;
     }
   }
-  
+  // Define the App class to manage the notes
   class App {
     constructor() {
       
@@ -125,7 +125,7 @@ class Note {
         return;
       }
     }
-  
+   // Method to add a new note to the notes
     addNote({ title, text }) {
       if (text != "") {
         const newNote = new Note(cuid(), title, text);
@@ -133,7 +133,7 @@ class Note {
         this.render();
       }
     }
-  
+  // Method to edit an existing note to the notes
     editNote(id, { title, text }) {
       this.notes = this.notes.map((note) => {
         if (note.id == id) {
@@ -144,6 +144,7 @@ class Note {
       });
       this.render();
     } 
+    // Method to delete a note in the notes
 
     deleteNote(id) {
         this.notes = this.notes.filter((note) => note.id != id);
