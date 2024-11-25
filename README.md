@@ -9,7 +9,6 @@ The application will allow a user to:
 - Create and add notes.
 - Edit and delete notes.
 - Archive notes.
-- Display notes in a clean and well-organized manner.
 
 ## How to Run the Project
 
