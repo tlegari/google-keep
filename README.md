@@ -1,6 +1,6 @@
 # Google Keep Clone (HTML, CSS, JS)
 
-In this is a simplified version of **Google Keep** using **HTML**, **CSS**, and **JavaScript**.
+this is a simplified version of **Google Keep** using **HTML**, **CSS**, and **JavaScript**.
 
 ## Key Features
 
